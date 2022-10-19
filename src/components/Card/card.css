@@ -1,0 +1,25 @@
+.card {
+    width: 30%;
+    margin-bottom: 30px;
+    position: relative;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.card_img {
+    height: 100%;
+    
+    object-fit: contain;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.card_p {
+    text-align: center;
+    position: absolute;
+    font-size: 18px;
+    left: 10px;
+    bottom: 0px;
+    color: white;
+}

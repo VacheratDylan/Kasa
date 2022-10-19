@@ -1,0 +1,15 @@
+.star {
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width:700px) {
+
+    .star {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+}

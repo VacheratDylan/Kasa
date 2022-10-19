@@ -1,0 +1,34 @@
+.picture {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+    max-width: 1440px;
+}
+
+
+.arrow_back,
+.arrow_forward {
+    width: 12px;
+    height: 20px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:700px) {
+
+    .picture {
+        height: 400px;
+    }
+
+    .arrow_back,
+    .arrow_forward {
+        width: 46px;
+        height: 79px;
+    }
+}

@@ -1,0 +1,29 @@
+.propos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.propos_dropdowns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.propos_img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../assets/propos_bg_mini.png");
+    margin-bottom: 50px;
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width:700px) {
+    .propos_img {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../assets/propos_bg.png");
+    }
+
+}

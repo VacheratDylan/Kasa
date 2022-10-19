@@ -1,0 +1,75 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.home_bg_container {
+    width: 100%;
+    height: 150px;
+    position: relative;
+
+}
+
+.home_bg {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../assets/home_bg_mini.png");
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.home_p {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    color: white;
+    font-size: 24px;
+    width: 200px;
+}
+
+.card_list {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+@media screen and (min-width:500px) {
+    .home {
+        width: 75%;
+        margin-left: 12.5%
+    }
+
+    .home_p {
+        left: 27%;
+        right: 20%;
+        width: auto;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .home_bg {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../assets/home_bg.png");
+    }
+}
+
+@media screen and (min-width:945px) {
+    .home_p {
+        font-size: 48px;
+        top: 10%;
+    }
+
+    .home_bg_container {
+        height: 200px;
+    }
+}
