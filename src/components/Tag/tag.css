@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width: 100px;
     height: 25px;
     border-radius: 10px;
     background-color: #FF6060;
@@ -13,6 +13,7 @@
 
 @media screen and (min-width:700px) {
     .tag {
+        width: 130px;
         font-size: 14px;
     }
 }

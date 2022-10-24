@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 68vh;
 }
 
 .propos_dropdowns {
@@ -14,7 +15,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../assets/propos_bg_mini.png");
     margin-bottom: 50px;
     width: 90%;
-    height: 300px;
+    height: 230px;
     border-radius: 20px;
     max-width: 1440px;
     background-repeat: no-repeat;

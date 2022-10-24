@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 95%;
     margin-left: 2.5%;
+    min-height: 68vh;
 }
 
 .home_bg_container {
