@@ -8,18 +8,16 @@ function Picture({ annonce }) {
     const [sourceimg, setSourceimg] = React.useState(annonce.pictures[0]);
     const [imageid, setImageid] = React.useState(0);
 
-    let arrowactive = false;
-    if (annonce.pictures.length < 2) {
-        arrowactive = true;
-    }
-
-    const componentDidMount = () => {
+    const preloadPictures = async () => {
         annonce.pictures.forEach((picture) => {
             const img = new Image();
             img.src = picture;
         });
     }
-    componentDidMount();
+
+    React.useEffect(() => {
+        preloadPictures();
+    })
 
     const backimage = () => {
         let id;
@@ -50,8 +48,8 @@ function Picture({ annonce }) {
 
     return (
         <div className='picture' style={{ backgroundImage: `url(${sourceimg})` }} alt={annonce.title}>
-            <img className='arrow_back' src={arrow_back} alt="fleche arriere" onClick={backimage} hidden={arrowactive} />
-            <img className='arrow_forward' src={arrow_forward} alt="fleche avant" onClick={forwardimage} hidden={arrowactive} />
+            <img className='arrow_back' src={arrow_back} alt="fleche arriere" onClick={backimage} hidden={annonce.pictures.length < 2} />
+            <img className='arrow_forward' src={arrow_forward} alt="fleche avant" onClick={forwardimage} hidden={annonce.pictures.length < 2} />
         </div>
     )
 }
